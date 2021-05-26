@@ -16,8 +16,8 @@ but seemed overkill here. All in all it was a good experience.
 ### Costly mistakes
 These are the things I found challenging, or cost me some time to fix:
 1. Deciding on what component should own what state.
-..* I decided to lift the posts state to the App, so I could update it from one child and view the
+...I decided to lift the posts state to the App, so I could update it from one child and view the
 results in the other. I think it is the right way to do it, but it comes at a cost of more renders.
 2. Figuring out the hard way that you shouldn't update a state within a state update hook.
 3. A function that returns JSX inside a component is not an actual component.
-..* This resulted in the routing troubles.
+...This resulted in the routing troubles.
