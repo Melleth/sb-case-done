@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: 'proxima-nova', sans-serif;
+}
+
+div#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header{
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.header a {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-left: 1rem;
+  text-decoration: none;
+  color:black;
+}
+
+.header a:hover {
+  color: #ff6600 ;
+}
+
+.header a:active {
+  color: #ffc49d;
+}
+
+.header .current-route {
+  text-decoration: underline;
+  color: #f27623;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f4f4;
+  justify-content: stretch;
+  height: calc(100% - 4.5rem);
+}
+
+/*
+    Container styling that wraps components begin.
+*/
+.container {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  float:left;
+}
+
+
+.container a, button {
+  display: block;
+  background-color: #f27623;
+  border: none;
+  width: 15rem;
+  padding: .5em;
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-size: smaller;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  margin-top: 1em; 
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+
+.container a:hover, button:hover {
+  background-color: #ff6600;
+}
+
+.container a:active, button:active {
+  background-color: #ffc49d;
+}
+
+/*
+      Container styling that wraps components end.
+*/

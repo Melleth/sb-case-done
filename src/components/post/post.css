@@ -1,0 +1,63 @@
+.post {
+  width: 15rem;
+  background-color: white;
+  box-shadow: 10px 10px 20px -13px rgba(0,0,0,1);
+  -webkit-box-shadow: 10px 10px 20px -13px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 20px -13px rgba(0,0,0,1);
+  height:auto;
+  overflow-y: hidden;
+  margin: 1rem;
+  padding-inline-start: 0;
+}
+
+.post h2 {
+  padding: 1rem;
+  margin: 0;
+}
+
+.post p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color:rgb(121, 121, 121);
+}
+
+.post-banner {
+  width: 100%;
+  height: 7rem;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  background-blend-mode: screen;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.post .post-banner p {
+  font-size: 0.7em;
+  color: rgb(235, 235, 235);
+  margin: 1.5em;
+  font-style: italic;
+  text-shadow: 1px 1px black;
+}
+
+/* Transition of posts stuff starts here. */
+.item-enter {
+  opacity: 0;
+}
+
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.item-exit {
+  opacity: 1;
+}
+
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}

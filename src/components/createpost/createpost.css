@@ -1,0 +1,40 @@
+.container h3 {
+  font-size: small;
+}
+
+.container form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container form label {
+  font-size: small;
+}
+
+.container form label.fill-parent {
+  flex-grow: 1;
+}
+
+.container input, textarea, select {
+  width: 100%;
+  height: 3em;
+  background-color: #fafafa;
+  border: 1px solid#fafafa;
+  border: black 2px;
+  border-radius: .5em;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+.container textarea {
+  resize: vertical;
+  resize: none;
+  height: 95%;
+}
+
+.container input:invalid, input.invalid, textarea:invalid, textarea.invalid, select.invalid {
+  border: 1px solid rgb(252, 143, 143);
+}

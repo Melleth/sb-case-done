@@ -1,0 +1,11 @@
+.container ul {
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  padding: 1rem;
+  overflow-y: auto;
+}
